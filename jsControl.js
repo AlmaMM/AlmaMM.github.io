@@ -39,9 +39,11 @@ function checkDoc(){
  }
 
  function jsonFile(){
+    let today = new Date();
+    let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
     let userInput = document.getElementById('userMail').value;
     let checkBox = document.getElementById('policies').value;
-    let fileinfo = String(userInput+";"+checkBox);
+    let fileinfo = String(userInput+";"+checkBox+";"+date+";");
     $.ajax
     ({
         type: "POST",

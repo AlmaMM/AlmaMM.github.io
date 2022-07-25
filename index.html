@@ -37,18 +37,18 @@
         <div class="row m-5">
             <div class="col-12 d-flex justify-content-center">
                 <form
-                    class="border  border-2 p-3 rounded-3 border-secondary d-flex flex-column justify-content-between align-items-center"
+                    class="border border-2 p-3 rounded-3 border-secondary d-flex flex-column justify-content-between align-items-center"
                     name="policyForm">
                     <label class="m-2" for="userMail">Email: </label>
                     <input type="email" name="userMail" id="userMail" onchange="checkMail()" value="">
                     <hr>
                     <label class="m-2" for="userMail">Políticas: </label>
                     <div>
-                        <input type="button" class="btn btn-danger" name="docBtn" id="docBtn"
+                        <input type="button" class="btn btn-danger m-2" name="docBtn" id="docBtn"
                             value="Pulse para acceder al documento" onclick="checkDoc()"><br>
-                        <label class="m-2 bg-primary p-2 rounded-3 text-white user-select-none" for="policies"
+                        <label class="m-2 bg-primary p-2 rounded-3 m-1 text-white user-select-none" for="policies"
                             onclick="checkBox()">He leído y acepto las políticas: </label>
-                        <input type="checkbox" name="policiesCheck" disabled id="policies">
+                        <input type="checkbox" class="m-1" name="policiesCheck" disabled id="policies">
                         <hr>
                     </div>
                     <button type="button" class="btn btn-success" id='submit' onclick="jsonFile()" disabled>Submit</button>
