@@ -17,7 +17,10 @@
         defer></script>
     <!-- Scripts -->
     <script src="jsControl.js" defer></script>
-    <script src="FileSaver.js" defer></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous" defer></script>
 </head>
 
 <body>
@@ -48,7 +51,7 @@
                         <input type="checkbox" name="policiesCheck" disabled id="policies">
                         <hr>
                     </div>
-                    <button type="button" class="btn btn-success" id='submit' onclick="submit()" disabled>Submit</button>
+                    <button type="button" class="btn btn-success" id='submit' onclick="jsonFile()" disabled>Submit</button>
                 </form>
             </div>
         </div>
